@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+    <p id="p1"> Hi There,I am Emre.I know C++,C,JavaScript,Html,Css,C#,Python.I study Kahramanmraş Science High school.I have won Deneyap Tech Academy.</p>
+    <p id="p2">Seven years later I will have finished the computer engineer department.  .I'm going to be a front end developer.</p>
+    <br>
+    <p id="p3">My achievements</p>
+    <ol>
+    <li>I have won Deneyap Tech Academy</li>
+    <li>I won Kahramanmaraş Science High School last year</li>
+    </ol>
+    <br> 
+    <p id="p4">I'm making  a discord bot</p>
+    <p id="p5">My discord bot commands</p>
+    <ol>
+    <li>!deneyapkartolustur</li>
+    <li>!davet </li>
+    <li>!yapimci</li>
+    <li>!merhaba</li>
+    <li>!yardim </li>
+    <li>!vke</li>
+    <li>!murphy</li>
+    <li>!rastgele</li>
+    <li>!sayitahmin</li>
+    </ol>
+    <p>Prewiev</p>
+    <img src="images/discordbotinvite.png" alt="" id="img1">
+    <img src="images/discordbotmerhaba.png" alt="" img="img2">
+    <br><br><br><br><br>
+    <label for=""  required style="color: white;">First Number   </label>
+    <input type="number"  placeholder="24" name="isim" id="isim" >
+    <label for="" style="color: white;" required> Second Number</label >
+    <input type="number" placeholder="15"  name=""  id="isim1">
+    <label for="" style="color: white;"> Process</label >
+    <input type="text" required placeholder="1=+,/ = 4,- = 2,*  = 3" id="process1">
+    <p id="p6">Result</p>
+    <button onclick="tikla()" id="button1"> Click</button>
+    <script>
+   function tikla(){
+    
+    var element = document.getElementById("p6")
+    var firstnumber = document.getElementById("isim")
+    var Second = document.getElementById("isim1")
+    var process2 = document.getElementById("process1")
+     if(parseInt(process2.value) == 1){
+        element.innerHTML = parseInt(firstnumber.value) + parseInt(Second.value)
+     }
+    else if(parseInt(process2.value) == 2){
+        element.innerHTML = parseInt(Second.value)  - parseInt(firstnumber.value)
+     }
+      else if(parseInt(process2.value) == 3){
+        element.innerHTML = parseInt(Second.value) * parseInt(firstnumber.value)
+
+     }
+    else if(parseInt(process2.value) == 4){
+        element.innerHTML = parseInt(Second.value) / parseInt(firstnumber.value)
+     }
+    }
+    </script>
+    <br><br><br>
+<p id="p7">My all Links</p>
+<a href="https://discord.gg/eHWh54Tj"
+target="_blank"
+title="DiscordLink">MyDiscordBotServer</a>
+<br><br>
+<a href="https://github.com/vakkas1234"
+target="_blank"
+title="Github"
+
+
+>My Github Link</a>
+
+</body>
+</html>
